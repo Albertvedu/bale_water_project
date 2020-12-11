@@ -16,22 +16,27 @@ class MenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    double horizontalPadding = screenSize.height > 600 ? 22 : 0;
     return GestureDetector(
       onTap: () => pushPage(context, page),
-      child:  Card(
-        borderOnForeground: true,
-        elevation: 8.0,
-            child: Column(
-                children: <Widget>[
-                  //const SectionTitle(title: 'Tappable'),
-                  Image.asset(image,
-                      width: 130,
-                      height: 120,
-                      fit:BoxFit.fill ),
+      child:  Padding(
+        padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
+        child: Card(
+          borderOnForeground: true,
+          elevation: 8.0,
+              child: Column(
+                  children: <Widget>[
+                    //const SectionTitle(title: 'Tappable'),
+                    Image.asset(image,
+                        width: 110,
+                        height: 100,
+                        fit:BoxFit.fill ),
 
-                ]
+                  ]
+              ),
             ),
-          )
+      )
 
     );
   }

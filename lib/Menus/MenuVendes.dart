@@ -31,7 +31,7 @@ class MenuVendes extends StatelessWidget{
           child: Column(
             children: <Widget>[
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   MenuItem(page: Clients(), text: "Clients", width: 130, image: "image/clients.png" ),
                   MenuItem(page: Balance(quieroverBalance: false, verFactura: false, texte: "Comandes",), text: "Comandes", width: 130, image: "image/comandes.jpeg"),
@@ -47,13 +47,14 @@ class MenuVendes extends StatelessWidget{
                 ],
               ),
               SizedBox( height: 12.0,),
+              screenSize.height > 600 ?
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   MenuItem(page: Productes(), text: "Productes", width: 130, image: "image/productes.png"),
                   MenuItem(page: Balance(quieroverBalance: true, verFactura: false, texte: "Balanç mensual"), text: "Balanç", width: 130, image: "image/balance.png"),
                 ],
-              ),
+              ): Container(),
             ],
           )
       ),
