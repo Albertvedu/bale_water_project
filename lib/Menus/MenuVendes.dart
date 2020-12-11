@@ -1,11 +1,8 @@
 import 'package:Balewaterproject/BackGroundPantalla.dart';
 import 'package:Balewaterproject/CRM/Ventas/Balance.dart';
 import 'package:Balewaterproject/CRM/Ventas/Clients.dart';
-import 'package:Balewaterproject/CRM/Ventas/ComandesClient.dart';
-import 'package:Balewaterproject/CRM/Ventas/Balance2.dart';
 import 'package:Balewaterproject/Menus/BannerBaleWater.dart';
 import 'package:Balewaterproject/Menus/MenuItem.dart';
-import 'package:Balewaterproject/Mostrar/ComandesARecollir.dart';
 import 'package:Balewaterproject/CRM/Ventas/Productes.dart';
 import 'package:flutter/material.dart';
 
