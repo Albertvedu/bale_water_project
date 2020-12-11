@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "826860011891",
+    "firebase_url": "https://balewaterproject-580af.firebaseio.com",
+    "project_id": "balewaterproject-580af",
+    "storage_bucket": "balewaterproject-580af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:826860011891:android:37f32ebb64924c33bd0506",
+        "android_client_info": {
+          "package_name": "com.dam.Balewaterproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "826860011891-sqgpr4vb6v9p2rg4625nfqthnv5leg7h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dam.Balewaterproject",
+            "certificate_hash": "87367f6d372b17a2d48b1ac60fa10740b29c40d9"
+          }
+        },
+        {
+          "client_id": "826860011891-cf9aqm11kkrmjjj2j37ms0a4den2spm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM753AzFNRYrxz17VR-pknXjRnGwpGOss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "826860011891-cf9aqm11kkrmjjj2j37ms0a4den2spm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
