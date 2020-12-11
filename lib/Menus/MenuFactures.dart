@@ -1,8 +1,6 @@
 
 import 'package:Balewaterproject/BackGroundPantalla.dart';
 import 'package:Balewaterproject/CRM/Compras/ComandesARebre.dart';
-import 'package:Balewaterproject/CRM/Facturacion/ClientsFac.dart';
-import 'package:Balewaterproject/CRM/Facturacion/ProveidorsFac.dart';
 import 'package:Balewaterproject/CRM/Ventas/Balance.dart';
 import 'package:Balewaterproject/CRM/Ventas/Clients.dart';
 import 'package:Balewaterproject/CRM/Ventas/ComandesClient.dart';
