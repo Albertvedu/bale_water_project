@@ -31,21 +31,51 @@ class MostrarBalance extends StatefulWidget {
 }
 
 class _MostrarBalanceState extends State<MostrarBalance> {
+  // @override
+  // Widget build(BuildContext context) {
+  //   return Expanded(
+  //
+  //     child: Column(
+  //       children: <Widget>[
+  //         _expenses(),
+  //         _graph(),
+  //         Container(
+  //           color: Colors.blueAccent.withOpacity(0.15),
+  //           height: 24.0,
+  //         ),
+  //       _list(),
+  //       ],
+  //     ),
+  //   );
+  // }
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-
-      child: Column(
-        children: <Widget>[
-          _expenses(),
-          _graph(),
+    final screenSize = MediaQuery.of(context).size;
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+        children: [
           Container(
-            color: Colors.blueAccent.withOpacity(0.15),
-            height: 24.0,
+            width: 320.0,
+            height: screenSize.height -235,
+            child: Expanded(
+              child: Column(
+                children: [
+                  _expenses(),
+                  _graph(),
+                  screenSize.height > 600 ?
+                      _list() : Container(),
+                ],
+              ),
+            ),
           ),
-        _list(),
+          screenSize.height < 600 ?
+          Container(
+            width: 300,
+            height: 160.0,
+            child:   _list(),
+          ): Container(),
         ],
-      ),
+
     );
   }
   Widget _expenses() {
