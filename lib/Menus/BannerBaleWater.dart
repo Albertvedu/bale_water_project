@@ -7,9 +7,11 @@ class BannerBaleWater extends StatelessWidget {
     this.texte}): super(key: key);
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    double top = screenSize.height > 600 ? 15 : 3;
     return Container(
       margin: EdgeInsets.only(
-          top: 15.0,
+          top: top,
           left: 40.0,
           right: 40.0,
           bottom: 3.0
@@ -19,7 +21,7 @@ class BannerBaleWater extends StatelessWidget {
           Image.asset("image/banner.png"),
           Container(
             margin: new EdgeInsets.only(
-                top: 20.0,
+                top: top,
 
             ),
             height: 25.0,

@@ -28,11 +28,13 @@ class _BottomNavState extends State<NavegadorBarraInferior> {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    double heigth = screenSize.height < 600 ? 40 : 50;
     return new Material(
       color: Colors.white,
       elevation: 12.0,
       child: new Container(
-        height: 56.0,
+        height: heigth,
         child: new Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[

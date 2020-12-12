@@ -51,31 +51,35 @@ class _MostrarBalanceState extends State<MostrarBalance> {
   @override
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-            width: 320.0,
-            height: screenSize.height -235,
-            child: Expanded(
-              child: Column(
-                children: [
-                  _expenses(),
-                  _graph(),
-                  screenSize.height > 600 ?
-                      _list() : Container(),
-                ],
+    print("altura.................................................................." + screenSize.height.toString()+ screenSize.width.toString());
+    return Expanded(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 290.0,
+              height: screenSize.height
+              ,
+              child: Expanded(
+                child: Column(
+                  children: [
+                    _expenses(),
+                    _graph(),
+                    screenSize.height > 600 ?
+                        _list() : Container(),
+                  ],
+                ),
               ),
             ),
-          ),
-          screenSize.height < 600 ?
-          Container(
-            width: 300,
-            height: 160.0,
-            child:   _list(),
-          ): Container(),
-        ],
+            screenSize.height < 600 ?
+            Container(
+              width: 300,
+              height: screenSize.height,
+              child:   _list(),
+            ): Container(),
+          ],
 
+      ),
     );
   }
   Widget _expenses() {
