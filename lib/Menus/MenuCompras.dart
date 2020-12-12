@@ -26,7 +26,7 @@ class MenuCompras extends StatelessWidget {
   Widget graella(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     return Container(
-        margin: EdgeInsets.only(top: 0.0, left: 0),
+        margin: EdgeInsets.only(top: 50.0, left: 0),
         height: 300,
         child: Column(
           children: <Widget>[

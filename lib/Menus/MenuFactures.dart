@@ -31,7 +31,7 @@ class MenuFactures extends StatelessWidget{
     return Expanded(
       child: Container(
           margin: EdgeInsets.only(
-              top: screenSize.height > 600 ? 100 : 0,
+              top: screenSize.height > 600 ? 100 : 50,
               left: 1.0),
           height: 300,
           child: Column(
