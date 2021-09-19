@@ -1,6 +1,7 @@
 # Balewaterproject
 
 A new Flutter application.
+School project of CFGS DAM
 
 ## Getting Started
 
